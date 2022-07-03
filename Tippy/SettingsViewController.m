@@ -21,6 +21,8 @@
 - (IBAction)updateDefaultTipPercentage:(UISegmentedControl*)sender {
     double tipPercentages[] = {0.10, 0.15, 0.20};
     
+    
+    
     double updatedDefaultTipPercentageIndex = sender.selectedSegmentIndex;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:updatedDefaultTipPercentageIndex forKey:@"default_tip_percentage_index"];
